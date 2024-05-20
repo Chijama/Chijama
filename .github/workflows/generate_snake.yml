@@ -37,6 +37,6 @@ jobs:
           git add dist/github-contribution-grid-snake.svg
           git add dist/github-contribution-grid-snake-dark.svg
           git commit -m "Generate snake animation"
-          git push --force "https://${{ secrets.ACTIONS_PAT }}@github.com/${{ github.repository_owner }}/${{ github.repository }}.git" HEAD:output
+          git push --force "https://${{ secrets.ACTIONS_PAT }}@github.com/Chijama/Chijama.git" HEAD:output
         env:
           ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
