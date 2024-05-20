@@ -17,6 +17,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-![GitHub Snake](https://raw.githubusercontent.com/Chijama/Chijama/output/github-contribution-grid-snake.svg)
+![GitHub Snake Light](https://raw.githubusercontent.com/Chijama/Chijama/output/github-contribution-grid-snake.svg)
+![GitHub Snake Dark](https://raw.githubusercontent.com/Chijama/Chijama/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
 
 ![footer](https://capsule-render.vercel.app/api?section=footer&type=waving&color=gradient)
