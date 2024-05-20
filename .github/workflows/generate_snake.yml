@@ -1,29 +1,39 @@
-name: Generate Snake
+name: generate animation
 
 on:
-  schedule: # Run at 12am UTC daily
-    - cron: "0 0 * * *"
+  # run automatically every 12 hours
+  schedule:
+    - cron: "0 */12 * * *" 
+  
+  # allows to manually run the job at any time
   workflow_dispatch:
+  
+  # run on every push to the main branch
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
-      - name: Generate Snake Game from GitHub user contributions
-        uses: Platane/snk@master
+
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - name: Push Snake Game to the repository
+          
+      - name: Push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
         env:
           ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git add dist/snake.svg
-          git commit -m "Generate snake game"
-          git push --force "https://x-access-token:${ACTIONS_PAT}@github.com/${{ github.repository_owner }}/${{ github.repository }}.git" HEAD:output
