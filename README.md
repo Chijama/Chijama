@@ -3,6 +3,12 @@
 
 # Contact me
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chiderajama@gmail.com) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/_shan.elle/) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chiderachijama/)
+
+
+
+- 🔭 I’m currently working on my Portfolio website
+- 🌱 I’m currently learning a lot
+- ⚡ Fun fact: I dance
 <!--
 **Chijama/Chijama** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
