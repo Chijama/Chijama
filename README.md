@@ -6,7 +6,7 @@
 
 
 
-- 🔭 I’m currently working on my Portfolio website
+- 🔭 I’m currently working on an Open source project
 - 🌱 I’m currently learning a lot
 - ⚡ Fun fact: I dance
 <!--
